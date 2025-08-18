@@ -22,18 +22,14 @@ export default function RegisterCompanyForm() {
     setStatus("⏳ Đang gửi...");
 
     try {
-      // 👉 gọi qua proxy thay vì gọi thẳng GAS
-      const res = await fetch(
-        "/api/macros/s/AKfycbzwjwp_v46Obe271VP-wvK-kmb2cnM27zhJwCO__lrRywpQaivgKFppXjHAk3VKjGZh/exec",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            token: "MY_SECRET_TOKEN",
-            ...form,
-          }),
-        }
-      );
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          token: "MY_SECRET_TOKEN",
+          ...form,
+        }),
+      });
 
       const data = await res.json();
       if (data.status === "success") {
