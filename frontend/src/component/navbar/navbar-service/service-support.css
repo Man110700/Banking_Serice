@@ -1,0 +1,21 @@
+.navbar-service {
+  background-color: white;
+  width: 100%;
+  color: rgb(30, 52, 207, 1);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-service ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar-service li {
+  height: 3rem;
+  margin: 0 5rem;
+  display: flex;
+  place-items: center;
+}

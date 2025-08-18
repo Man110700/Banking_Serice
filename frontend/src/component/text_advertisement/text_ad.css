@@ -1,0 +1,15 @@
+.text-ad {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(17, 40, 206, 1);
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+.highlight {
+  color: red;
+}
+
+.text-ad img {
+  transform: translateY(25%);
+}
