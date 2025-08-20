@@ -1,6 +1,6 @@
 .form-name {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: rgb(29, 28, 112, 1);
   margin-bottom: 1rem;
 }
@@ -11,14 +11,14 @@
   flex-wrap: wrap;
   list-style-type: decimal;
   list-style-position: outside;
-  padding-left: 10rem;
+  padding-left: 4rem; /*window = 10rem*/
   background-color: rgb(231, 231, 244, 1);
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
 .infor {
-  width: 50%;
+  width: 90%;
   height: 5rem;
 }
 
@@ -77,4 +77,20 @@
 
 .infor:nth-child(7) button:active {
   transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+  .form-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infor {
+    width: 50%;
+  }
+
+  .form-name {
+    font-size: 2.5rem;
+  }
 }

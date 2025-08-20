@@ -1,9 +1,10 @@
 .text-ad {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.2rem;
   color: rgb(17, 40, 206, 1);
   margin: 1.5rem 0;
   font-weight: bold;
+  padding: 0 1rem;
 }
 
 .highlight {
@@ -12,4 +13,23 @@
 
 .text-ad img {
   transform: translateY(25%);
+  width: 4rem;
+}
+
+@media (min-width: 768px) {
+  .text-ad {
+    font-size: 2rem;
+  }
+  .text-ad img {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-ad {
+    font-size: 3rem;
+  }
+  .text-ad img {
+    width: 8rem;
+  }
 }
